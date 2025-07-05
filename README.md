@@ -1,2 +1,2 @@
 # bitirme-tezi
-Emlak verileriyle konut fiyat tahmini projesi
+Emlak verileriyle konut fiyat tahmini projesi.
