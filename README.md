@@ -1,49 +1,47 @@
+Konut Fiyat Tahmini – Samsun / Atakum Örneği
 
-# Konut Fiyat Tahmini – Samsun / Atakum Örneği
+Bu çalışma, Samsun’un Atakum ilçesindeki konut ilanlarından elde edilen verilerle konut fiyatlarını etkileyen temel değişkenleri belirlemeyi ve farklı makine öğrenmesi algoritmalarıyla fiyat tahmini modelleri geliştirmeyi amaçlamaktadır. Çalışma, bir lisans bitirme tezi kapsamında hazırlanmıştır.
 
-Bu çalışma, Samsun'un Atakum ilçesindeki konut ilanlarından elde edilen verilerle konut fiyatlarını etkileyen temel değişkenleri belirlemeyi ve bu doğrultuda makine öğrenmesi algoritmalarıyla fiyat tahmini modelleri geliştirmeyi amaçlamaktadır. Proje, bir lisans bitirme tezi kapsamında hazırlanmıştır.
+Özet
 
-## Özet
+Konutlar, bireylerin barınma ihtiyacını karşılamanın ötesinde, sosyal ve ekonomik yaşamın önemli bir bileşenidir. Özellikle yoğun şehirleşme bölgelerinde konut fiyatları; konum, yapı özellikleri ve çevresel faktörler gibi çok sayıda değişkenden etkilenmektedir.
 
-Konutlar, yalnızca bireylerin barınma ihtiyacını karşılayan yapılar olmanın ötesinde, sosyal ve ekonomik hayatın önemli bir parçası olarak değerlendirilmektedir. Özellikle şehirleşmenin yoğunlaştığı bölgelerde konutların değeri; konum, yapı özellikleri ve çevresel faktörler gibi çok sayıda etkene bağlı olarak değişkenlik göstermektedir.
+Bu proje kapsamında, Atakum ilçesindeki konut ilanları analiz edilmiş; fiyatları etkileyen faktörler belirlenmiş ve bu faktörler doğrultusunda çeşitli tahmin modelleri geliştirilmiştir. Veri seti üzerinde tanımlayıcı istatistikler, korelasyon analizleri ve aykırı değer tespiti yapılmış; ardından logaritmik dönüşüm ve diğer veri ön işleme adımları uygulanmıştır.
 
-Bu bağlamda, Samsun'un gelişmekte olan ilçelerinden biri olan Atakum'daki konut ilanları incelenmiş; fiyatlara etki eden faktörler belirlenmiş ve bu faktörler doğrultusunda çeşitli tahmin modelleri oluşturulmuştur. Çalışma kapsamında, veri seti üzerinde tanımlayıcı istatistikler, korelasyon analizleri ve aykırı değer tespiti gibi yöntemler uygulanmış; ardından logaritmik dönüşüm gibi veri ön işleme adımları gerçekleştirilmiştir.
+Fiyat tahmin modelleri olarak doğrusal regresyon, karar ağaçları, rastgele orman (Random Forest), gradyan artırma (Gradient Boosting), XGBoost, LightGBM ve yapay sinir ağı (Artificial Neural Network) gibi farklı makine öğrenmesi algoritmaları kullanılmıştır. Model karşılaştırmaları sonucunda, özellikle Random Forest, XGBoost ve ANN modellerinin yüksek doğruluk sağladığı gözlemlenmiştir. Ayrıca, modellerin performansını artırmak için hiperparametre optimizasyonu ve model iyileştirme önerileri sunulmuştur.
 
-Makine öğrenmesi algoritmaları olarak doğrusal regresyon, rastgele orman (Random Forest) ve yapay sinir ağı (Artificial Neural Network) modelleri kullanılmış; özellikle Random Forest ve ANN modellerinin daha yüksek doğruluk sağladığı gözlemlenmiştir.
+Elde edilen bulgular, yerel emlak yatırımları ve bölgesel veri odaklı analizler açısından yol gösterici niteliktedir.
 
-Elde edilen bulgular, hem yerel düzeyde emlak yatırımları için yol gösterici olabilir hem de bölgesel veri temelli analizlerin akademik bağlamda önemini ortaya koymaktadır.
+Kullanılan Yöntemler ve Araçlar
 
-## Yöntemler ve Kullanılan Araçlar
+Tanımlayıcı istatistikler, korelasyon analizi ve aykırı değer tespiti
 
-- Tanımlayıcı istatistiksel analizler
-- Korelasyon analizi ve aykırı değer tespiti
-- Veri dönüşüm teknikleri (log dönüşüm)
-- Regresyon tabanlı makine öğrenmesi algoritmaları:
-  - Doğrusal Regresyon
-  - Random Forest
-  - Yapay Sinir Ağı
-- Programlama dili: Python
-- Kullanılan kütüphaneler: pandas, numpy, scikit-learn, matplotlib, seaborn
+Veri ön işleme ve dönüşüm teknikleri (log dönüşümü, normalizasyon, eksik veri yönetimi)
 
-## Proje Dosya Yapısı
+Makine öğrenmesi algoritmaları:
 
-```
+Doğrusal Regresyon
 
-bitirme-tezi/
-├── rapor.pdf            # Bitirme projesi raporu
-├── data/                # Veri dosyaları
-├── notebooks/           # Analiz ve modelleme kodları (.ipynb)
-├── models/              # Eğitilmiş modeller ve sonuç çıktıları
-├── visuals/             # Grafik ve görselleştirmeler
-└── README.md            # Açıklama dosyası
+Karar Ağaçları
 
-```
+Random Forest
 
-## Anahtar Kelimeler
+Gradient Boosting
 
-Konut Fiyat Tahmini, Makine Öğrenmesi, İstatistiksel Analiz, Regresyon, Random Forest, Yapay Sinir Ağı, Samsun, Atakum
+XGBoost
 
-## Not
+LightGBM
 
-Bu çalışma yalnızca akademik amaçla hazırlanmış olup, ticari kullanıma açık değildir.
+Yapay Sinir Ağı (ANN)
 
+Programlama dili: Python
+
+Kütüphaneler: pandas, numpy, scikit-learn, xgboost, lightgbm, keras/tensorflow, matplotlib, seaborn
+
+Anahtar Kelimeler
+
+Konut Fiyat Tahmini, Makine Öğrenmesi, İstatistiksel Analiz, Regresyon, Random Forest, Gradient Boosting, XGBoost, LightGBM, Yapay Sinir Ağı, Samsun, Atakum
+
+Not
+
+Bu çalışma yalnızca akademik amaçla hazırlanmıştır ve ticari kullanım için uygun değildir.
