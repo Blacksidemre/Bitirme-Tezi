@@ -1,4 +1,4 @@
-KONUT FİYAT TAHMİNİ – SAMSUN / ATAKUM ÖRNEĞİ
+# KONUT FİYAT TAHMİNİ – SAMSUN / ATAKUM ÖRNEĞİ
 
 Bu proje, Samsun’un Atakum ilçesindeki konut ilanlarından elde edilen verilerle konut fiyatlarını etkileyen temel değişkenleri belirlemeyi ve farklı makine öğrenmesi algoritmalarıyla fiyat tahmini modelleri geliştirmeyi amaçlamaktadır. Çalışma, bir lisans bitirme tezi kapsamında hazırlanmıştır.
 
