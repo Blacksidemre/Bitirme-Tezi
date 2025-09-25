@@ -1,8 +1,8 @@
-Konut Fiyat Tahmini – Samsun / Atakum Örneği
+KONUT FİYAT TAHMİNİ – SAMSUN / ATAKUM ÖRNEĞİ
 
 Bu proje, Samsun’un Atakum ilçesindeki konut ilanlarından elde edilen verilerle konut fiyatlarını etkileyen temel değişkenleri belirlemeyi ve farklı makine öğrenmesi algoritmalarıyla fiyat tahmini modelleri geliştirmeyi amaçlamaktadır. Çalışma, bir lisans bitirme tezi kapsamında hazırlanmıştır.
 
-Özet
+ÖZET
 
 Konutlar, bireylerin barınma ihtiyacını karşılamanın ötesinde, sosyal ve ekonomik yaşamın önemli bir bileşenidir. Özellikle yoğun şehirleşme bölgelerinde konut fiyatları; konum, yapı özellikleri ve çevresel faktörler gibi çok sayıda değişkenden etkilenmektedir.
 
@@ -36,7 +36,7 @@ Model karşılaştırmaları sonucunda Random Forest, XGBoost ve ANN modelleri y
 
 Elde edilen bulgular, yerel emlak yatırımları ve bölgesel veri odaklı analizler açısından yol gösterici niteliktedir.
 
-Kullanılan Yöntemler ve Araçlar
+KULLANILAN YÖNTEMLER VE ARAÇLAR
 
 İstatistiksel analizler: Tanımlayıcı istatistikler, korelasyon analizi, aykırı değer tespiti
 
@@ -62,10 +62,10 @@ Programlama dili: Python
 
 Kütüphaneler: pandas, numpy, scikit-learn, xgboost, lightgbm, keras/tensorflow, matplotlib, seaborn
 
-Anahtar Kelimeler
+ANAHTAR KELİMELER
 
 Konut Fiyat Tahmini, Makine Öğrenmesi, İstatistiksel Analiz, Regresyon, Random Forest, Gradient Boosting, XGBoost, LightGBM, Yapay Sinir Ağı, Samsun, Atakum
 
-Not
+NOT
 
 Bu çalışma yalnızca akademik amaçla hazırlanmıştır ve ticari kullanım için uygun değildir.
