@@ -1,10 +1,12 @@
-# KONUT FİYAT TAHMİNİ – SAMSUN / ATAKUM ÖRNEĞİ
+# Konut Fiyat Tahmini – Samsun / Atakum Örneği
 
 Bu proje, Samsun’un Atakum ilçesindeki konut ilanlarından elde edilen verilerle konut fiyatlarını etkileyen temel değişkenleri belirlemeyi ve farklı makine öğrenmesi algoritmalarıyla fiyat tahmini modelleri geliştirmeyi amaçlamaktadır. Çalışma, bir lisans bitirme tezi kapsamında hazırlanmıştır.
 
-ÖZET
+# Özet
 
-Konutlar, bireylerin barınma ihtiyacını karşılamanın ötesinde, sosyal ve ekonomik yaşamın önemli bir bileşenidir. Özellikle yoğun şehirleşme bölgelerinde konut fiyatları; konum, yapı özellikleri ve çevresel faktörler gibi çok sayıda değişkenden etkilenmektedir.
+Konutlar, bireylerin barınma ihtiyacını karşılamanın ötesinde, sosyal ve ekonomik yaşamın önemli bir bileşenidir.
+
+Özellikle yoğun şehirleşme bölgelerinde konut fiyatları; konum, yapı özellikleri ve çevresel faktörler gibi çok sayıda değişkenden etkilenmektedir.
 
 Bu proje kapsamında:
 
@@ -16,56 +18,34 @@ Veri seti üzerinde tanımlayıcı istatistikler, korelasyon analizleri ve aykı
 
 Logaritmik dönüşüm ve diğer veri ön işleme adımları uygulanmıştır.
 
-Fiyat tahmini için kullanılan makine öğrenmesi modelleri:
+# Makine öğrenmesi algoritmaları
 
 Doğrusal Regresyon
-
 Karar Ağaçları
-
 Random Forest
-
 Gradient Boosting
-
 XGBoost
-
 LightGBM
-
 Yapay Sinir Ağı (ANN)
 
 Model karşılaştırmaları sonucunda Random Forest, XGBoost ve ANN modelleri yüksek doğruluk sağlamıştır. Ayrıca modellerin performansını artırmak için hiperparametre optimizasyonu ve iyileştirme önerileri uygulanmıştır.
 
-Elde edilen bulgular, yerel emlak yatırımları ve bölgesel veri odaklı analizler açısından yol gösterici niteliktedir.
+Elde edilen bulgular, yerel emlak yatırımları ve bölgesel veri odaklı analizler açısından yol göstericidir.
 
-KULLANILAN YÖNTEMLER VE ARAÇLAR
+# Kullanılan Yöntemler ve Araçlar
 
 İstatistiksel analizler: Tanımlayıcı istatistikler, korelasyon analizi, aykırı değer tespiti
 
 Veri ön işleme: Log dönüşümü, normalizasyon, eksik veri yönetimi
 
-Makine öğrenmesi algoritmaları:
-
-Doğrusal Regresyon
-
-Karar Ağaçları
-
-Random Forest
-
-Gradient Boosting
-
-XGBoost
-
-LightGBM
-
-Yapay Sinir Ağı (ANN)
-
 Programlama dili: Python
 
 Kütüphaneler: pandas, numpy, scikit-learn, xgboost, lightgbm, keras/tensorflow, matplotlib, seaborn
 
-ANAHTAR KELİMELER
+# Anahtar Kelimeler
 
 Konut Fiyat Tahmini, Makine Öğrenmesi, İstatistiksel Analiz, Regresyon, Random Forest, Gradient Boosting, XGBoost, LightGBM, Yapay Sinir Ağı, Samsun, Atakum
 
-NOT
+# Not
 
 Bu çalışma yalnızca akademik amaçla hazırlanmıştır ve ticari kullanım için uygun değildir.
