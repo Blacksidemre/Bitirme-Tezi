@@ -1,51 +1,66 @@
 # Konut Fiyat Tahmini – Samsun / Atakum Örneği
 
-Bu proje, Samsun’un Atakum ilçesindeki konut ilanlarından elde edilen verilerle konut fiyatlarını etkileyen temel değişkenleri belirlemeyi ve farklı makine öğrenmesi algoritmalarıyla fiyat tahmini modelleri geliştirmeyi amaçlamaktadır. Çalışma, bir lisans bitirme tezi kapsamında hazırlanmıştır.
+## Proje Hakkında
 
-# Özet
+Bu proje, Samsun’un Atakum ilçesindeki konut ilanlarından elde edilen verilerle konut fiyatlarını etkileyen temel değişkenleri belirlemeyi ve farklı makine öğrenmesi algoritmalarıyla fiyat tahmini modelleri geliştirmeyi amaçlamaktadır. Lisans bitirme tezi kapsamında hazırlanmıştır.
 
-Konutlar, bireylerin barınma ihtiyacını karşılamanın ötesinde, sosyal ve ekonomik yaşamın önemli bir bileşenidir.
+## Özet
 
-Özellikle yoğun şehirleşme bölgelerinde konut fiyatları; konum, yapı özellikleri ve çevresel faktörler gibi çok sayıda değişkenden etkilenmektedir.
+Konut fiyatları konum, yapı özellikleri ve çevresel faktörlerden etkilenir. Bu proje kapsamında:
 
-Bu proje kapsamında:
+* Atakum ilçesindeki konut ilanları analiz edilmiştir.
+* Fiyatları etkileyen temel faktörler belirlenmiştir.
+* Tanımlayıcı istatistikler, korelasyon analizleri ve aykırı değer tespiti yapılmıştır.
+* Veri ön işleme adımları (log dönüşümü, normalizasyon, eksik veri yönetimi) uygulanmıştır.
 
-Atakum ilçesindeki konut ilanları analiz edilmiştir.
+## Kullanılan Yöntemler ve Araçlar
 
-Fiyatları etkileyen temel faktörler belirlenmiştir.
+* **Programlama Dili:** Python
+* **Kütüphaneler:** pandas, numpy, scikit-learn, xgboost, lightgbm, keras/tensorflow, matplotlib, seaborn
+* **Makine Öğrenmesi Modelleri:** Doğrusal Regresyon, Karar Ağaçları, Random Forest, Gradient Boosting, XGBoost, LightGBM, Yapay Sinir Ağı (ANN)
 
-Veri seti üzerinde tanımlayıcı istatistikler, korelasyon analizleri ve aykırı değer tespiti yapılmıştır.
+## Model Sonuçları
 
-Logaritmik dönüşüm ve diğer veri ön işleme adımları uygulanmıştır.
+* En yüksek doğruluk sağlayan modeller: Random Forest, XGBoost ve ANN
+* Model performansı hiperparametre optimizasyonu ve iyileştirmelerle artırılmıştır
+* Bulgular, yerel emlak yatırımları ve bölgesel veri odaklı analizler açısından yol göstericidir
 
-# Makine öğrenmesi algoritmaları
+## Dosya Yapısı
 
-Doğrusal Regresyon
-Karar Ağaçları
-Random Forest
-Gradient Boosting
-XGBoost
-LightGBM
-Yapay Sinir Ağı (ANN)
+```
+Bitirme-Tezi/
+│
+├── README.md                  # Proje açıklaması
+├── bitirmetezi.pdf            # Bitirme tezi raporu
+├── veriseti.xlsx              # Emlak verisi
+├── analiz_icin_kodlar.py      # Veri analizi scripti
+└── Zaman Serisi.docx          # Zaman serisi analizi raporu
+```
 
-Model karşılaştırmaları sonucunda Random Forest, XGBoost ve ANN modelleri yüksek doğruluk sağlamıştır. Ayrıca modellerin performansını artırmak için hiperparametre optimizasyonu ve iyileştirme önerileri uygulanmıştır.
+## Kurulum ve Kullanım
 
-Elde edilen bulgular, yerel emlak yatırımları ve bölgesel veri odaklı analizler açısından yol göstericidir.
+1. Repo klonlanır:
 
-# Kullanılan Yöntemler ve Araçlar
+```bash
+git clone https://github.com/Blacksidemre/Bitirme-Tezi.git
+cd Bitirme-Tezi
+```
 
-İstatistiksel analizler: Tanımlayıcı istatistikler, korelasyon analizi, aykırı değer tespiti
+2. Gerekli kütüphaneler yüklenir:
 
-Veri ön işleme: Log dönüşümü, normalizasyon, eksik veri yönetimi
+```bash
+pip install -r requirements.txt
+```
 
-Programlama dili: Python
+3. Veri analizi için:
 
-Kütüphaneler: pandas, numpy, scikit-learn, xgboost, lightgbm, keras/tensorflow, matplotlib, seaborn
+```bash
+python analiz_icin_kodlar.py
+```
 
-# Anahtar Kelimeler
+4. Makine öğrenmesi modellerini çalıştırmak için ilgili scriptleri kullanabilirsiniz.
 
-Konut Fiyat Tahmini, Makine Öğrenmesi, İstatistiksel Analiz, Regresyon, Random Forest, Gradient Boosting, XGBoost, LightGBM, Yapay Sinir Ağı, Samsun, Atakum
+## Anahtar Kelimeler
 
-# Not
+Konut Fiyat Tahmini, Makine Öğrenmesi, İstatistik, Random Forest, XGBoost, Yapay Sinir Ağı
 
-Bu çalışma yalnızca akademik amaçla hazırlanmıştır ve ticari kullanım için uygun değildir.
