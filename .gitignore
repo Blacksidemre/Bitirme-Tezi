@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+dist/
+build/
+*.egg-info/
+
+# Reproducible but bulky runtime model artifact
+outputs/latest/models/*.joblib
+
+# Local application state
+.streamlit/secrets.toml
+.DS_Store

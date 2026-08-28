@@ -1,0 +1,8 @@
+{
+  "n": 1922,
+  "parameter_count": 38,
+  "r_squared": 0.7877565613417322,
+  "adjusted_r_squared": 0.7835882984806091,
+  "rmse_log": 0.19524739319589623,
+  "condition_number": 20628.41469097715
+}

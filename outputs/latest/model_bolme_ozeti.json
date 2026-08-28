@@ -1,0 +1,9 @@
+{
+  "random_state": 42,
+  "train_rows": 1537,
+  "test_rows": 385,
+  "cross_validation_folds": 5,
+  "mae_ci_95_low": 436335.50915724714,
+  "mae_ci_95_high": 535997.6382508473,
+  "best_model": "Extra Trees"
+}
