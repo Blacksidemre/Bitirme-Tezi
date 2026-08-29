@@ -1,0 +1,72 @@
+{
+  "data_audit": {
+    "reported_raw_rows": 2836,
+    "previously_removed_rows": 555,
+    "repository_rows": 2281,
+    "exact_duplicate_rows": 169,
+    "malformed_rows": 9,
+    "structurally_valid_rows": 2272,
+    "unique_listing_ids": 1922,
+    "repeated_snapshot_rows": 665,
+    "listings_with_price_change": 48,
+    "latest_snapshot_rows": 1922,
+    "gross_below_net_rows": 0,
+    "date_min": "2024-06-23",
+    "date_max": "2025-05-19"
+  },
+  "price": {
+    "mean": 3372224.6873048907,
+    "median": 2900000.0,
+    "minimum": 925000.0,
+    "maximum": 8250000.0,
+    "median_price_per_gross_m2": 36043.55716878403
+  },
+  "best_model": {
+    "name": "Extra Trees",
+    "locked_test": {
+      "test_mae": 484506.5566860897,
+      "test_rmse": 695407.9342697413,
+      "test_r2": 0.7925476564625287,
+      "test_mape": 0.14337097570325785
+    },
+    "cross_validation": {
+      "cv_mae_mean": 468459.4252261462,
+      "cv_mae_std": 39144.735057908474,
+      "cv_r2_mean": 0.7872904620591171,
+      "cv_r2_std": 0.02873960792931788
+    },
+    "mae_ci_95_low": 436335.50915724714,
+    "mae_ci_95_high": 535997.6382508473
+  },
+  "neighborhood_test": {
+    "group_count": 18,
+    "n": 1844,
+    "h_statistic": 559.5192747864968,
+    "p_value": 5.216572535919496e-108,
+    "epsilon_squared": 0.29710803657529944
+  },
+  "hedonic_model": {
+    "n": 1922,
+    "parameter_count": 38,
+    "r_squared": 0.7877565613417322,
+    "adjusted_r_squared": 0.7835882984806091,
+    "rmse_log": 0.19524739319589623,
+    "condition_number": 20628.41469097715
+  },
+  "outputs": {
+    "tables": "outputs/latest/tables",
+    "figures": [
+      "outputs/latest/figures/01_veri_akisi.png",
+      "outputs/latest/figures/02_fiyat_dagilimi.png",
+      "outputs/latest/figures/03_mahalle_medyan_fiyat.png",
+      "outputs/latest/figures/04_oda_fiyat_profili.png",
+      "outputs/latest/figures/05_korelasyon_isiharitasi.png",
+      "outputs/latest/figures/06_model_performansi.png",
+      "outputs/latest/figures/07_gercek_tahmin.png",
+      "outputs/latest/figures/08_artik_analizi.png",
+      "outputs/latest/figures/09_ozellik_onemi.png",
+      "outputs/latest/figures/10_protokol_duyarliligi.png"
+    ],
+    "model": "outputs/latest/models/en_iyi_model.joblib"
+  }
+}

@@ -1,0 +1,58 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "atakum-housing-analysis"
+version = "2.0.0"
+description = "Samsun Atakum konut ilanları için tekrarlanabilir istatistik ve makine öğrenmesi analizi"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  {name = "Yunus Emre Büyükgüler"},
+  {name = "Kadir Ertürk"},
+]
+dependencies = [
+  "joblib>=1.4,<2",
+  "matplotlib>=3.8,<4",
+  "numpy>=2.0,<3",
+  "openpyxl>=3.1,<4",
+  "pandas>=2.2,<3",
+  "scikit-learn>=1.5,<2",
+  "scipy>=1.13,<2",
+  "seaborn>=0.13,<1",
+]
+
+[project.optional-dependencies]
+dashboard = [
+  "plotly>=5.24,<7",
+  "streamlit>=1.40,<2",
+]
+thesis = [
+  "python-docx>=1.1,<2",
+]
+dev = [
+  "pytest>=8,<9",
+  "ruff>=0.9,<1",
+]
+
+[project.scripts]
+atakum-housing = "atakum_housing.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.ruff.lint.per-file-ignores]
+"dashboard/app.py" = ["E402", "E501"]
+"scripts/build_thesis.py" = ["E501"]

@@ -1,0 +1,15 @@
+{
+  "reported_raw_rows": 2836,
+  "previously_removed_rows": 555,
+  "repository_rows": 2281,
+  "exact_duplicate_rows": 169,
+  "malformed_rows": 9,
+  "structurally_valid_rows": 2272,
+  "unique_listing_ids": 1922,
+  "repeated_snapshot_rows": 665,
+  "listings_with_price_change": 48,
+  "latest_snapshot_rows": 1922,
+  "gross_below_net_rows": 0,
+  "date_min": "2024-06-23",
+  "date_max": "2025-05-19"
+}

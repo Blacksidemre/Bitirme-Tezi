@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "Bu depoyu akademik çalışmanızda kullanırsanız lütfen aşağıdaki şekilde atıf yapın."
+title: "Samsun Atakum Konut Fiyat Analizi"
+type: software
+version: 2.0.0
+date-released: 2026-08-28
+authors:
+  - family-names: "Büyükgüler"
+    given-names: "Yunus Emre"
+  - family-names: "Ertürk"
+    given-names: "Kadir"
+repository-code: "https://github.com/Blacksidemre/Bitirme-Tezi"
+url: "https://github.com/Blacksidemre/Bitirme-Tezi"
+keywords:
+  - konut fiyatı
+  - Atakum
+  - hedonik regresyon
+  - makine öğrenmesi
+  - Streamlit
